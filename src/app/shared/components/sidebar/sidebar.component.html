@@ -1,0 +1,17 @@
+<aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar" id="sidebar">
+  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+    <span class="flex items-center p-2 rounded-lg dark:text-white ml-3 mb-3 text-3xl font-bold text-slate-200 cursor-pointer">MyGif</span>
+
+    <hr>
+
+    <ul class="space-y-2 font-medium mt-5"
+      *ngFor="let tag of tags">
+      <li>
+        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+          <span class="flex-1 ml-3 whitespace-nowrap">{{ tag | titlecase}}</span>
+          <span class="inline-flex items-center justify-center px-2 ml-3 text-sm text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">X</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>
