@@ -1,7 +1,11 @@
 <div class="flex flex-col">
   <!-- Buscador -->
-  <gifs-search-box class="pl-6 pr-6 pt-5"></gifs-search-box>
+  <div class="pl-6 pr-6 pt-5">
+    <gifs-search-box></gifs-search-box>
+  </div>
     <!-- Gifs -->
-  <gifs-card-list [gifs]="gifs"></gifs-card-list>
+  <div class="m-6">
+    <gifs-card-list [gifs]="gifs"></gifs-card-list>
+  </div>
 
 </div>
