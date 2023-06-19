@@ -1,0 +1,8 @@
+<figure class="max-w-lg">
+  <shared-lazy-image
+    [url]="gif.images.downsized_medium.url"
+    [alt]="gif.title || 'Sin descripción'"
+  ></shared-lazy-image>
+  <!-- <img class="h-auto max-w-full max-h-60 mx-auto rounded-lg" [src]="gif.images.downsized_medium.url" [alt]="gif.title"> -->
+  <figcaption class="bg-gray-50 dark:bg-gray-800 p-3 rounded-bl-md rounded-br-md mt-2 text-sm text-center text-gray-500 dark:text-gray-400">{{ gif.title || "Sin descripción"}}</figcaption>
+</figure>
